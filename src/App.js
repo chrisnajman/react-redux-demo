@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
+import diagram from './assets/redux-demo-diagram.png'
 
 // Redux
 import { connect } from 'react-redux'
@@ -31,6 +32,7 @@ class App extends Component {
               id="changeUserName"
             />
           </label>
+          <img className="diagram" src={diagram} alt="Diagram" />
 
         </div>  
         
