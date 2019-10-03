@@ -3,6 +3,9 @@
 Very simple demo to clarify and demonstrate the function of each file (store.js, root-reducer.js, etc, etc.)
 
 ## Setup
+`npx create-react-app react-redux-demo`
+
+`cd react-redux-demo`
 
 `npm install redux redux-react --save-dev`
 
