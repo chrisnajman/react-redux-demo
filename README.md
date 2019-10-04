@@ -3,11 +3,11 @@
 Very simple demo to clarify and demonstrate the function of each file (store.js, root-reducer.js, etc, etc.)
 
 ## Setup
-`npx create-react-app react-redux-demo`
+`git clone git@github.com:chrisnajman/react-redux-demo.git`
 
 `cd react-redux-demo`
 
-`npm install redux redux-react --save-dev`
+`npm install`
 
 
 ![React/Redux Demo Diagram](https://chris-najman.co.uk/react-redux-demo-diagram/redux-demo-diagram.png)
