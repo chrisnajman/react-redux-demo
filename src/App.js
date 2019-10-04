@@ -43,10 +43,10 @@ class App extends Component {
 
 // mapStateToProps: gets props passed from root-reducers.js > store.js (via connect)
 const mapStateToProps = state => ({
-  username: state.defaultUsername.username
+  username: state.updatedUserName.username
 })
 
-// mapDispatchToProps: Send changed props to username.reducer.js > root-reducers.js > store.js (via connect)
+// mapDispatchToProps: Send changed props via username.actions.js to username.reducer.js > root-reducers.js > store.js (via connect)
 const mapDispatchToProps = dispatch => ({
   setUserName: changedUserName => dispatch(setUserName(changedUserName))
 })
