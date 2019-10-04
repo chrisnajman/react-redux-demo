@@ -1,6 +1,6 @@
 import { UserActionTypes } from './username.types'
 
-export const setUserName = changedUserName => ({
+export const setUserName = updatedUserName => ({
     type: UserActionTypes.SET_USERNAME,
-    payload: changedUserName
+    payload: updatedUserName
 })
