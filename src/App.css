@@ -32,3 +32,8 @@ span {
 }
 
 .diagram { margin:40px auto; }
+
+button {
+    align-self: flex-start;
+    margin-bottom:20px;
+}
