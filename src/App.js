@@ -58,9 +58,17 @@ class App extends Component {
   - currentUserName comes from root-reducer.js 
   - .username and .userage come from INITIAL_STATE of username.reducer.js
 */
-const mapStateToProps = state => ({
-  username: state.currentUserName.username,
-  userage: state.currentUserName.userage
+// const mapStateToProps = state => ({
+//   username: state.currentUserName.username,
+//   userage: state.currentUserName.userage
+// })
+
+/**
+ * DESTRUCTURED version of code above:
+ */
+const mapStateToProps = ({ currentUserName: {username, userage}}) => ({
+  username,
+  userage
 })
 
 // mapDispatchToProps: Send changed props via username.actions.js to username.reducer.js > root-reducers.js > store.js (via connect)
