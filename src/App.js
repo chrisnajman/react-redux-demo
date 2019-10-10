@@ -4,7 +4,7 @@ import diagram from './assets/redux-demo-diagram.png'
 
 // Redux
 import { connect } from 'react-redux'
-import { setUserName, setUserAge} from './redux/username/username.actions'
+import { setUserName, setUserAge} from './redux/user/user.actions'
 
 class App extends Component {
 
@@ -55,26 +55,26 @@ class App extends Component {
   Note:
   - username: and userage: keys are ARBITRARY names - they could be anything.
   -- These keys are then used as props within this (App.js) document.
-  - currentUserName comes from root-reducer.js 
+  - currentUser comes from root-reducer.js 
   - .username and .userage come from INITIAL_STATE of username.reducer.js
 */
 // const mapStateToProps = state => ({
-//   username: state.currentUserName.username,
-//   userage: state.currentUserName.userage
+//   username: state.currentUser.username,
+//   userage: state.currentUser.userage
 // })
 
 /**
  * DESTRUCTURED version of code above:
  */
-const mapStateToProps = ({ currentUserName: {username, userage}}) => ({
+const mapStateToProps = ({ currentUser: {username, userage}}) => ({
   username,
   userage
 })
 
-// mapDispatchToProps: Send changed props via username.actions.js to username.reducer.js > root-reducers.js > store.js (via connect)
+// mapDispatchToProps: Send changed props via user.actions.js to user.reducer.js > root-reducers.js > store.js (via connect)
 /*
   Note:
-  - setUserName: and setUserAge: are imported from username.actions.js
+  - setUserName: and setUserAge: are imported from user.actions.js
   - In this particular case, updatedUserName and updatedUserAge values are ARBITRARY names - they could be anything.
   -- However, if an array was being passed down as a prop from another component, we'd
      put the name of that prop in the place where updatedUserName/Age is being used.

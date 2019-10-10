@@ -1,10 +1,10 @@
-import { UserActionTypes } from './username.types'
+import { UserActionTypes } from './user.types'
 const INITIAL_STATE = {
     username: 'John Doe',
     userage: 10
 }
 
-const usernameReducer = (state = INITIAL_STATE, action) => {
+const userReducer = (state = INITIAL_STATE, action) => {
 
     switch(action.type) {
         case UserActionTypes.SET_USERNAME:
@@ -23,4 +23,4 @@ const usernameReducer = (state = INITIAL_STATE, action) => {
 
 }
 
-export default usernameReducer
+export default userReducer

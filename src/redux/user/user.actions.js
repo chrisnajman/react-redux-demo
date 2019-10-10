@@ -1,4 +1,4 @@
-import { UserActionTypes } from './username.types'
+import { UserActionTypes } from './user.types'
 
 export const setUserName = updatedUserName => ({
     type: UserActionTypes.SET_USERNAME,
